@@ -1,0 +1,72 @@
+body {
+    background-color: #f0f0f2;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.4fr 1.3fr 1.3fr;
+    grid-template-rows: 0.8fr 1.1fr 1.1fr;
+    gap: 0.2rem;
+    grid-template-areas:
+        'sideBar header header'
+        'sideBar main main'
+        'sideBar main main';
+    align-content: center;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    color: rgb(7, 6, 6);
+    text-align: center;
+}
+.sideBar {
+    grid-area: sideBar;
+    background-color: #1e1e96;
+}
+.header {
+    grid-area: header;
+    background-color: #14c039;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galery {
+    width: 75%;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.galery .fotos {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.galery .fotos img {
+    width: 20%;
+    float: left;
+}
+
+.main {
+    grid-area: main;
+    background-color: #b36307;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: 0.5fr 1.5fr;
+        grid-template-rows: 0.8fr 1.1fr 1.1fr;
+        grid-template-areas:
+            'sideBar header'
+            'sideBar main'
+            'sideBar main';
+    }
+}
