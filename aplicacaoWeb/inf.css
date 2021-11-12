@@ -14,6 +14,7 @@ body {
     grid-template-rows: 0.8fr 1.8fr 0.4fr;
     grid-template-areas:
         'header header header header'
+        'titulo1 titulo1 titulo2 titulo2'
         'content1 content1 content2 content2'
         'btn01 btn01 btn02 btn02'
         'footer footer footer footer';
@@ -30,6 +31,11 @@ header {
     border-radius: var(--main-radius);
     padding: var(--main-padding);
     text-align: center;
+}
+
+.sideBar {
+    grid-area: sideBar;
+    background-color: #1e1e96;
 }
 
 #content1 {
@@ -76,6 +82,19 @@ h1 {
     border: none;
     padding: 8px;
     
+}
+
+p{
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+select{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 
 h2{
