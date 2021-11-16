@@ -13,11 +13,11 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 0.8fr 1.8fr 0.4fr;
     grid-template-areas:
-        'header header header header'
-        'titulo1 titulo1 titulo2 titulo2'
-        'content1 content1 content2 content2'
-        'btn01 btn01 btn02 btn02'
-        'footer footer footer footer';
+        'sideBar header header header header'
+        'sideBar titulo1 titulo1 titulo2 titulo2'
+        'sideBar content1 content1 content2 content2'
+        'sideBar btn01 btn01 btn02 btn02'
+        'sideBar footer footer footer footer';
     gap: 0.2rem;
     font-family: 'Public Sans', sans-serif;
     font-weight: 800;
@@ -31,6 +31,16 @@ header {
     border-radius: var(--main-radius);
     padding: var(--main-padding);
     text-align: center;
+}
+
+
+.titulo1{
+    grid-area: titulo1;
+
+}
+
+titulo2{
+    grid-area: titulo2;
 }
 
 .sideBar {
@@ -84,6 +94,13 @@ h1 {
     
 }
 
+h3{
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-bottom: 5px;
+    border: none;
+}
+
 p{
     font-size: 20px;
     font-weight: 800;
@@ -95,6 +112,7 @@ select{
     width: 100%;
     text-align: center;
     justify-content: center;
+    border-radius: 15px;
 }
 
 h2{
@@ -192,13 +210,14 @@ p > a:hover {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: 'galery';
     justify-items: center;
     background-color: rgb(252, 201, 104);
 }
 
 #content2 > h1{
     justify-items:start;
+    width: auto;
+    height: 50px;
 }
 
 .galery {
