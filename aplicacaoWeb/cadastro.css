@@ -10,12 +10,12 @@ body {
 .container {
     display: grid;
     height: 100vh;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 0.8fr 1.8fr 0.4fr;
     grid-template-areas:
         'header header header header header'
         'imagem parte1 parte1 parte2 parte2'
-        'imagem footer footer footer footer';
+        'footer footer footer footer footer';
     gap: 0.2rem;
     font-family: 'Public Sans', sans-serif;
     font-weight: 800;
@@ -53,6 +53,7 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    border-radius: 12px;
 }
 
 #parte1 {
@@ -63,6 +64,7 @@ header h1 {
     grid-template-rows: 1fr;
     grid-template-areas: 'form';
     justify-items: flex-start;
+    margin-left: 30px;
 }
 
 #parte1 form {
@@ -139,6 +141,7 @@ footer #cadastrar {
     justify-self: center;
     margin: 10px;
     padding: 5px;
+    margin-left: 230px;
 }
 
 #cadastrar:hover {
