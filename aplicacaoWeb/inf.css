@@ -39,7 +39,7 @@ header {
 
 }
 
-titulo2{
+.titulo2{
     grid-area: titulo2;
 }
 
@@ -208,17 +208,10 @@ p > a:hover {
     border-radius: var(--main-radius);
     padding: var(--main-padding);
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     justify-items: center;
     background-color: rgb(252, 201, 104);
 }
 
-#content2 > h1{
-    justify-items:start;
-    width: auto;
-    height: 50px;
-}
 
 .galery {
     grid-area: galery;
