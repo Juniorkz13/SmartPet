@@ -10,13 +10,13 @@ body {
 .container {
     display: grid;
     height: 100vh;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.8fr 1.8fr 0.4fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.2fr 0.8fr 0.8fr 1.8fr 0.4fr;
     grid-template-areas:
         'sideBar header header header header'
         'sideBar titulo1 titulo1 titulo2 titulo2'
         'sideBar content1 content1 content2 content2'
-        'sideBar btn01 btn01 btn02 btn02'
+        'sideBar btn01 btn01 btn01 btn02'
         'sideBar footer footer footer footer';
     gap: 0.2rem;
     font-family: 'Public Sans', sans-serif;
@@ -45,7 +45,18 @@ header {
 
 .sideBar {
     grid-area: sideBar;
-    background-color: #1e1e96;
+    width: 10%;
+    height: 10%;
+}
+
+.sideBar img {
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    width: 30px;
+    padding: 12px;
+    margin-top: 10px;
+    margin-left: 25px;
 }
 
 #content1 {
@@ -163,7 +174,7 @@ form > button {
     transition: 0.6s;
 }
 
-#btn02 {
+.btn02 {
     font-size: 12px;
     font-weight: 800;
     color: rgb(255, 255, 255);
@@ -178,6 +189,7 @@ form > button {
     padding: 5px;
     transition: 0.6s;
 }
+
 
 
 button:hover {
