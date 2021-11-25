@@ -72,7 +72,7 @@ input:focus {
 form > button {
     font-size: 12px;
     font-weight: 800;
-    color: rgb(255, 255, 255);
+    color: seashell;
     background-color: rgb(252, 201, 104);
     text-align: center;
     border-radius: 15px;
@@ -87,7 +87,7 @@ form > button {
 
 form > button > a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: seashell;
 }
 
 button:hover {
@@ -97,14 +97,14 @@ button:hover {
 form > p {
     font-size: 10px;
     font-weight: 800;
-    color: rgb(255, 255, 255);
+    color: seashell;
     justify-self: flex-start;
     align-self: flex-start;
     margin-top: 0px;
 }
 
 p > a {
-    color: rgb(255, 255, 255);
+    color: seashell;
     text-decoration: none;
     transition: 0.6s;
 }
@@ -162,7 +162,7 @@ footer {
 footer > p {
     font-size: 15px;
     font-weight: 800;
-    color: rgb(255, 255, 255);
+    color: seashell;
     justify-self: center;
     align-self: center;
 }

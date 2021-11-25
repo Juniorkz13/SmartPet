@@ -30,6 +30,13 @@ body {
     width: 30px;
     padding: 12px;
     margin: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.sideBar img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .header {
@@ -56,16 +63,33 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .main > div {
+    width: 150px;
+    height: 150px;
+}
+
+.main > div > a > img {
     width: 100px;
     height: 100px;
-    background-color: #fff;
-    border-radius: 15px;
-    margin: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.main > div > a > img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.main > div > h1 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    color: seashell;
 }
 
 @media only screen and (max-width: 600px) {
