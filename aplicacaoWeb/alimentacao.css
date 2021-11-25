@@ -7,16 +7,36 @@ body {
     height: 100vh;
     grid-template-columns: 0.3fr 1.35fr 1.35fr;
     grid-template-rows: 0.5fr 1.5fr;
-    gap: 0.2rem;
     grid-template-areas:
         'sideBar header header'
         'sideBar main main';
+    gap: 0.2rem;
     font-family: 'Public Sans', sans-serif;
     font-weight: 800;
     font-size: 12px;
     color: rgb(7, 6, 6);
     text-align: center;
 }
+
+.header {
+    grid-area: header;
+    min-height: 100px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.header > img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
 .sideBar {
     grid-area: sideBar;
     display: flex;
@@ -39,57 +59,76 @@ body {
     transform: scale(1.2);
 }
 
-.header {
-    grid-area: header;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-}
-
-.header > img {
-    max-width: 100%;
-    object-fit: contain;
-}
-
 .main {
     grid-area: main;
-    background-color: rgb(111, 184, 190);
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.main > div {
-    width: 150px;
-    height: 150px;
-}
-
-.main > div > a > img {
-    width: 100px;
-    height: 100px;
-    transition: all 0.5s;
-    cursor: pointer;
-}
-
-.main > div > a > img:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-.main > div > h1 {
-    font-size: 20px;
+.main > h1 {
+    font-size: 40px;
     font-weight: 800;
-    margin: 0;
-    padding: 0;
     color: seashell;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    border: none;
+    padding: 8px;
+}
+
+.main > h3 {
+    color: seashell;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    border: none;
+}
+
+.main > select {
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 800;
+    color: seashell;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    background-color: rgb(252, 201, 104);
+    border: none;
+    padding: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.main > button {
+    font-size: 14px;
+    font-weight: 800;
+    color: seashell;
+    background-color: rgb(252, 201, 104);
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    width: 25%;
+    align-self: center;
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    transition: 0.6s;
+}
+
+.main > button > a {
+    text-decoration: none;
+    color: seashell;
+}
+
+button:hover {
+    background-color: rgb(201, 160, 82);
 }
 
 @media only screen and (max-width: 600px) {
@@ -138,36 +177,10 @@ body {
 
     .main {
         grid-area: main;
-        background-color: rgb(111, 184, 190);
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-    }
-
-    .main > div {
-        width: 150px;
-        height: 150px;
-    }
-
-    .main > div > a > img {
-        width: 100px;
-        height: 100px;
-        transition: all 0.5s;
-        cursor: pointer;
-    }
-
-    .main > div > a > img:hover {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    .main > div > h1 {
-        font-size: 20px;
-        font-weight: 800;
-        margin: 0;
-        padding: 0;
-        color: seashell;
+        flex-wrap: wrap;
     }
 }
