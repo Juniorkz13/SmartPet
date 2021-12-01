@@ -44,7 +44,6 @@ body {
     grid-area: header;
     width: 100%;
     height: 100%;
-    min-height: 150px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -99,12 +98,12 @@ form > input {
     font-size: 14px;
     font-weight: 800;
     color: rgb(255, 255, 255);
-    text-align: center;
+    text-align: left;
     border-radius: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     background-color: rgb(252, 201, 104);
     border: none;
-    padding: 2px;
+    padding: 5px;
     box-shadow: 0px 0px 5px rgb(201, 160, 82);
 }
 
@@ -151,18 +150,6 @@ form > p {
     margin-top: 0px;
 }
 
-form > label {
-    font-size: 15px;
-    font-weight: 800;
-    color: seashell;
-    margin-top: 0px;
-}
-
-form > label > input[type='radio'] {
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
 p > a {
     color: seashell;
     text-decoration: none;
@@ -203,7 +190,6 @@ p > a:hover {
         grid-area: header;
         width: 100%;
         height: 100%;
-        min-height: 150px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
