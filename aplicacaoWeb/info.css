@@ -44,7 +44,7 @@ body {
     grid-area: header;
     width: 100%;
     height: 100%;
-    min-height: 150px;
+    min-height: 210px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -67,110 +67,42 @@ body {
     align-items: center;
 }
 
-.main > form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    padding: 20px;
-}
-
-form > h1 {
+.main > h1 {
     font-size: 30px;
     font-weight: 800;
     margin-bottom: 20px;
     color: seashell;
 }
 
-form > input {
-    width: 300px;
-    height: 40px;
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoContent {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(252, 201, 104);
     border-radius: 15px;
-    border: 1px solid rgb(111, 184, 190);
-    padding: 10px;
+    padding: 20px;
+    color: rgb(49, 39, 23);
+    text-align: start;
+    box-shadow: 0px 0px 5px rgb(201, 160, 82);
+}
+
+.infoContent > h2 {
+    font-size: 20px;
+    font-weight: 800;
     margin-bottom: 20px;
-    font-size: 16px;
-    font-weight: 800;
-    color: rgb(7, 6, 6);
+    color: rgb(49, 39, 23);
 }
 
-form > input {
-    font-size: 14px;
-    font-weight: 800;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    background-color: rgb(252, 201, 104);
-    border: none;
-    padding: 2px;
-    box-shadow: 0px 0px 5px rgb(201, 160, 82);
-}
-
-::placeholder {
-    color: rgb(201, 160, 82);
-}
-
-input:focus {
-    outline: none;
-}
-
-form > button {
-    font-size: 12px;
-    font-weight: 800;
-    color: seashell;
-    background-color: rgb(252, 201, 104);
-    text-align: center;
-    border-radius: 15px;
-    border: none;
-    width: 50%;
-    align-self: center;
-    justify-self: center;
-    margin: 10px;
-    padding: 5px;
-    transition: 0.6s;
-    box-shadow: 0px 0px 5px rgb(201, 160, 82);
-}
-
-form > button > a {
-    text-decoration: none;
-    color: seashell;
-}
-
-button:hover {
-    background-color: rgb(201, 160, 82);
-}
-
-form > p {
-    font-size: 10px;
-    font-weight: 800;
-    color: seashell;
-    justify-self: flex-start;
-    align-self: flex-start;
-    margin-top: 0px;
-}
-
-form > label {
+.infoContent > p {
     font-size: 15px;
-    font-weight: 800;
-    color: seashell;
-    margin-top: 0px;
-}
-
-form > label > input[type='radio'] {
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-p > a {
-    color: seashell;
-    text-decoration: none;
-    transition: 0.6s;
-}
-
-p > a:hover {
-    opacity: 80%;
+    margin-bottom: 20px;
+    color: rgb(49, 39, 23);
 }
 
 @media only screen and (max-width: 600px) {
@@ -203,7 +135,6 @@ p > a:hover {
         grid-area: header;
         width: 100%;
         height: 100%;
-        min-height: 150px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -218,38 +149,11 @@ p > a:hover {
         object-fit: contain;
     }
 
-    .main {
-        grid-area: main;
-        background-color: rgb(111, 184, 190);
+    .botoes {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-    }
-
-    .main > div {
-        width: 150px;
-        height: 150px;
-    }
-
-    .main > div > a > img {
-        width: 100px;
-        height: 100px;
-        transition: all 0.5s;
-        cursor: pointer;
-    }
-
-    .main > div > a > img:hover {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    .main > div > h1 {
-        font-size: 20px;
-        font-weight: 800;
-        margin: 0;
-        padding: 0;
-        color: seashell;
+        flex-wrap: wrap;
     }
 }

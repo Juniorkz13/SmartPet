@@ -59,6 +59,7 @@ form > input {
     background-color: rgb(252, 201, 104);
     border: none;
     padding: 8px;
+    box-shadow: 0px 0px 5px rgb(201, 160, 82);
 }
 
 ::placeholder {
@@ -83,6 +84,7 @@ form > button {
     margin: 10px;
     padding: 5px;
     transition: 0.6s;
+    box-shadow: 0px 0px 5px rgb(201, 160, 82);
 }
 
 form > button > a {
