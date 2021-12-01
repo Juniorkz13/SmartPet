@@ -17,6 +17,7 @@ body {
     color: rgb(7, 6, 6);
     text-align: center;
 }
+
 .sideBar {
     grid-area: sideBar;
     display: flex;
@@ -41,9 +42,9 @@ body {
 
 .header {
     grid-area: header;
-    min-height: 150px;
     width: 100%;
     height: 100%;
+    min-height: 210px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -52,6 +53,7 @@ body {
     align-items: center;
     border-radius: 15px;
 }
+
 .header > img {
     max-width: 100%;
     object-fit: contain;
@@ -72,62 +74,35 @@ body {
     color: seashell;
 }
 
-.relatorio {
+.info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.relatorio > h2 {
-    font-size: 20px;
-    font-weight: 800;
-    margin-bottom: 20px;
-    color: seashell;
-}
-
-.relatorio-content {
+.infoContent {
     display: flex;
     flex-direction: column;
     background-color: rgb(252, 201, 104);
     border-radius: 15px;
     padding: 20px;
     color: rgb(49, 39, 23);
-    text-align: justify;
+    text-align: start;
     box-shadow: 0px 0px 5px rgb(201, 160, 82);
 }
 
-.botoes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.botoes > div {
-    margin: 10px;
-    align-items: center;
-}
-
-.botoes > div > h3 {
-    font-size: 15px;
+.infoContent > h2 {
+    font-size: 20px;
     font-weight: 800;
-    margin: 0;
     margin-bottom: 20px;
-    color: seashell;
+    color: rgb(49, 39, 23);
 }
 
-.botoes > div > a > img {
-    width: 100px;
-    height: 100px;
-    transition: all 0.5s;
-    cursor: pointer;
-}
-
-.botoes > div > a > img:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+.infoContent > p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: rgb(49, 39, 23);
 }
 
 @media only screen and (max-width: 600px) {
@@ -180,30 +155,5 @@ body {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-    }
-
-    .botoes > div {
-        margin: 10px;
-        align-items: center;
-    }
-
-    .botoes > div > h3 {
-        font-size: 15px;
-        font-weight: 800;
-        margin: 0;
-        margin-bottom: 20px;
-        color: seashell;
-    }
-
-    .botoes > div > a > img {
-        width: 100px;
-        height: 100px;
-        transition: all 0.5s;
-        cursor: pointer;
-    }
-
-    .botoes > div > a > img:hover {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
     }
 }
