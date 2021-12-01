@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="cadastro.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="animation.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <title>Cadastro</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <img src="img/photo-1589924691995-400dc9ecc119.jfif" alt="food1" />
+            </div>
+            <div class="sideBar">
+                <div>
+                    <a href="login.html">
+                        <img src="img/arrow.png" alt="Seta" />
+                    </a>
+                </div>
+            </div>
+            <div class="main">
+                <form>
+                    <h1>Cadastro</h1>
+                    <input type="text" name='nome' placeholder="Nome">
+                    <input type="text" name='sobrenome' placeholder="Sobrenome">
+                    <input type="tel" name='telefone' placeholder="Telefone">
+                    <input type='text' name='endereco' placeholder="Endereço">
+                    <input type="email" name="email" placeholder="E-mail" >
+                    <input type='email' name='confirmaEmail' placeholder="Confirmar E-mail">
+                    <input type="password" name="senha" placeholder="Senha">
+                    <input type="password" name="confirmaSenha" placeholder="Confirmar Senha">
+                    <label for="" >
+                        Qual animal você possui?
+                    </label>
+                    <label>
+                        <input type="radio" name="animal" value="Cachorro" />
+                        Cachorro
+                        <input type="radio" name="animal" value="Gato" />
+                        Gato
+                        <input type="radio" name="animal" value="Outro" />
+                        Outro
+                    </label>
+                    <button type="submit" name="recuperarSenha">
+                           <a href="login.html">CADASTRAR</a>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
